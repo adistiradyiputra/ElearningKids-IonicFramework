@@ -1,0 +1,35 @@
+<ion-header translucent>
+  <ion-toolbar color="pink">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Pengaturan Kesulitan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-list-header>
+      <ion-label
+        >Pilih pengaturan kesulitan dibawah, sesuai yang anda
+        inginkan</ion-label
+      >
+    </ion-list-header>
+    <br />
+    <br />
+    <ion-item>
+      <ion-label>Mudah</ion-label>
+      <ion-toggle slot="start" name="mudah" color="success"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Menengah</ion-label>
+      <ion-toggle slot="start" name="menengah" color="warning"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sulit</ion-label>
+      <ion-toggle slot="start" name="sulit" color="danger"></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>

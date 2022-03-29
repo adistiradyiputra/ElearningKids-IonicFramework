@@ -1,0 +1,255 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="pink" no-border>
+    <ion-buttons slot="start" class="ion-padding-top">
+      <ion-avatar>
+        <img src="/assets/pf.jpg" />
+      </ion-avatar>
+      <ion-label class="ion-padding-start">
+        <p>Hallo,</p>
+        <h3>Michella</h3>
+      </ion-label>
+    </ion-buttons>
+    <ion-title class="ion-text-center"> </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <img src="/assets/menu.png" style="width: 90%; height: 90%" />
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="banner">
+    <img src="/assets/banner.svg" />
+
+    <div class="caption ion-padding">
+      Ayo bergabung<br />
+      banyak kelas menarik
+    </div>
+
+    <div class="search">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-icon slot="start" name="search-outline"></ion-icon>
+        <ion-input placeholder="Cari Kelas"></ion-input>
+        <ion-button slot="end" color="pink">
+          <img src="/assets/filter.svg" />
+        </ion-button>
+      </ion-item>
+    </div>
+  </div>
+
+  <div class="title">
+    <h2>Kategori Kelas</h2>
+    <p>Lihat semua</p>
+  </div>
+
+  <div class="event-slider">
+    <ion-slides
+      [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }"
+      class="default-left-padding"
+    >
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="/assets/class/num.jpg" />
+            </ion-card-header>
+
+            <ion-card-content routerLink="/number">
+              <p class="date">1 Desember, 2021</p>
+              <p class="eventname">Mengenal Angka</p>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Bogor, Indonesia
+              </p>
+
+              <div class="additional-info">
+                <div class="attendees">
+                  <img src="/assets/person/person1.svg" />
+                  <img src="/assets/person/person2.svg" />
+                  <img src="/assets/person/person3.svg" />
+                  <img src="/assets/person/person4.svg" />
+
+                  <div class="count">
+                    <img src="/assets/person/person-placeholder.svg" />
+                    <p>+7</p>
+                  </div>
+                </div>
+                <p class="time">08:30</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="/assets/class/alph.jpg" />
+            </ion-card-header>
+
+            <ion-card-content routerLink="/alphabet">
+              <p class="date">2 Desember, 2021</p>
+              <p class="eventname">Mengenal Alfabet</p>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Bogor, Indonesia
+              </p>
+
+              <div class="additional-info">
+                <div class="attendees">
+                  <img src="/assets/person/person1.svg" />
+                  <img src="/assets/person/person2.svg" />
+                  <img src="/assets/person/person3.svg" />
+                  <img src="/assets/person/person4.svg" />
+
+                  <div class="count">
+                    <img src="/assets/person/person-placeholder.svg" />
+                    <p>+3</p>
+                  </div>
+                </div>
+                <p class="time">10:00</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="/assets/class/sh.jpg" />
+            </ion-card-header>
+
+            <ion-card-content routerLink="/shapes">
+              <p class="date">3 Desember, 2021</p>
+              <p class="eventname">Mengenal Macam bentuk</p>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Bogor, Indonesia
+              </p>
+
+              <div class="additional-info">
+                <div class="attendees">
+                  <img src="/assets/person/person1.svg" />
+                  <img src="/assets/person/person2.svg" />
+                  <img src="/assets/person/person3.svg" />
+                  <img src="/assets/person/person4.svg" />
+
+                  <div class="count">
+                    <img src="/assets/person/person-placeholder.svg" />
+                    <p>+5</p>
+                  </div>
+                </div>
+                <p class="time">09:00</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="/assets/class/test.jpg" />
+            </ion-card-header>
+
+            <ion-card-content routerLink="/test">
+              <p class="date" style="margin-top: 12px">4 Desember, 2021</p>
+              <p class="eventname">Test pengetahuan anak</p>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Bogor, Indonesia
+              </p>
+
+              <div class="additional-info">
+                <div class="attendees">
+                  <img src="/assets/person/person1.svg" />
+                  <img src="/assets/person/person2.svg" />
+                  <img src="/assets/person/person3.svg" />
+                  <img src="/assets/person/person4.svg" />
+
+                  <div class="count">
+                    <img src="/assets/person/person-placeholder.svg" />
+                    <p>+6</p>
+                  </div>
+                </div>
+                <p class="time">09:30</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="/assets/class/set.jpg" />
+            </ion-card-header>
+
+            <ion-card-content routerLink="/setting">
+              <p class="date">Setting</p>
+              <p class="eventname">Pengaturan kesulitan</p>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Bogor, Indonesia
+              </p>
+
+              <div class="additional-info">
+                <div class="attendees">
+                  <img src="/assets/person/person1.svg" />
+                  <img src="/assets/person/person2.svg" />
+                  <img src="/assets/person/person3.svg" />
+                  <img src="/assets/person/person4.svg" />
+
+                  <div class="count">
+                    <img src="/assets/person/person-placeholder.svg" />
+                    <p>+6</p>
+                  </div>
+                </div>
+                <p class="time">10:30</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="default-top-padding title">
+    <h2>Kegiatan yang sedang berlangsung</h2>
+  </div>
+
+  <div class="live-event">
+    <img src="/assets/event3.svg" />
+
+    <div class="info">
+      <div class="content">
+        <h6>Hari seni sedunia</h6>
+
+        <p class="stats">
+          <span> <ion-icon name="eye"></ion-icon>1,7ribu </span>
+          <span> <ion-icon name="heart"></ion-icon>&nbsp;3758 </span>
+        </p>
+
+        <p class="location">
+          <ion-icon name="location"></ion-icon>Bogor, Indonesia
+        </p>
+        <div class="additional-info">
+          <div class="attendees">
+            <img src="/assets/person/person1.svg" />
+            <img src="/assets/person/person2.svg" />
+            <img src="/assets/person/person3.svg" />
+            <img src="/assets/person/person4.svg" />
+
+            <div class="count">
+              <img src="/assets/person/person-placeholder.svg" />
+              <p>+6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indicator">
+        <div>Live</div>
+      </div>
+    </div>
+  </div>
+</ion-content>
